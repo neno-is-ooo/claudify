@@ -1,0 +1,48 @@
+{
+  "name": "claudify",
+  "version": "1.0.0",
+  "description": "Claudify - Use Claude Code as an LLM provider in your app with your Claude Code subscription flat fee",
+  "private": true,
+  "workspaces": [
+    "packages/sdk",
+    "packages/demo/client",
+    "packages/demo/server"
+  ],
+  "scripts": {
+    "dev": "npm run dev:server & npm run dev:client",
+    "dev:sdk": "npm run dev --workspace=claudify",
+    "dev:server": "npm run dev --workspace=@claude-cc/demo-server",
+    "dev:client": "npm run dev --workspace=@claude-cc/demo-client",
+    "build": "npm run build:sdk && npm run build:server && npm run build:client",
+    "build:sdk": "npm run build --workspace=claudify",
+    "build:server": "npm run build --workspace=@claude-cc/demo-server",
+    "build:client": "npm run build --workspace=@claude-cc/demo-client",
+    "prepublish": "npm run build:sdk",
+    "publish:sdk": "npm publish --workspace=claudify",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present && rm -rf node_modules",
+    "install:all": "npm install",
+    "demo": "npm run dev"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "llm",
+    "ai",
+    "sdk",
+    "typescript",
+    "websocket",
+    "real-time"
+  ],
+  "author": "neno-is-ooo",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

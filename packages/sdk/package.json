@@ -1,0 +1,49 @@
+{
+  "name": "claudify",
+  "version": "1.0.1",
+  "description": "Use Claude Code as an LLM provider with your Claude Code subscription flat fee instead of pay-per-token API keys",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "claudify": "./bin/claudify.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ai",
+    "llm",
+    "sdk",
+    "cli"
+  ],
+  "author": "neno-is-ooo",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.16.0",
+    "uuid": "^9.0.1",
+    "socket.io": "^4.7.4",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/ws": "^8.5.10",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neno-is-ooo/claudify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neno-is-ooo/claudify/issues"
+  },
+  "homepage": "https://github.com/neno-is-ooo/claudify#readme"
+}

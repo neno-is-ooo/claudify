@@ -1,0 +1,22 @@
+# Source files (only publish dist)
+src/
+*.ts
+!*.d.ts
+
+# Config files
+tsconfig.json
+.eslintrc
+.prettierrc
+
+# Development files
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Misc
+.DS_Store
+*.log
+node_modules/
+.vscode/
+.idea/

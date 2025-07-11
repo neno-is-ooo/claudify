@@ -1,0 +1,81 @@
+/* Model Selector Styles */
+.model-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.model-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.model-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.model-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Dark mode styles for model selector */
+[data-theme="dark"] .model-select {
+  border-color: #444;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* Connection Status Styles */
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+}
+
+.connection-status.connected {
+  background-color: #e8f5e8;
+  color: #2d6e2d;
+  border-color: #a8d5a8;
+}
+
+.connection-status.disconnected {
+  background-color: #ffeaea;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.status-text {
+  font-weight: 500;
+}
+
+/* Dark mode styles for connection status */
+[data-theme="dark"] .connection-status.connected {
+  background-color: #1f2a1f;
+  color: #86d986;
+  border-color: #2d6e2d;
+}
+
+[data-theme="dark"] .connection-status.disconnected {
+  background-color: #2a1f1f;
+  color: #ff6b6b;
+  border-color: #b91c1c;
+}

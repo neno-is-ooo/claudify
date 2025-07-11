@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production
+dist/
+build/
+*.tsbuildinfo
+
+# Testing
+coverage/
+.nyc_output
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+.temp/
+.tmp/
+.cache/
+*.tmp
+*.temp
+
+# Package manager
+.npm
+.eslintcache
+.yarn-integrity
+
+# Demo specific
+packages/demo/server/conversations/
+packages/demo/client/dist/
+packages/demo/client/.vite/
+
+# SDK specific
+packages/sdk/dist/
+packages/sdk/lib/
+
+# Examples build artifacts
+examples/*/dist/
+examples/*/build/
+examples/*/.next/
+examples/*/out/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
+.grunt
+.lock-wscript

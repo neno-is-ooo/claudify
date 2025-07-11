@@ -1,0 +1,17 @@
+{
+  "name": "claude-cc-basic-chat-example",
+  "version": "1.0.0",
+  "description": "Basic terminal chat example using Claude Code SDK",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@claude-cc/sdk": "workspace:*"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
